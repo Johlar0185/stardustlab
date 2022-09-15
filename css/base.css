@@ -1,0 +1,45 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #f8f5f5;
+  --accent1: #deafa9;
+}
+
+/* Header styling */
+
+#logo {
+  max-width: 7rem;
+  float: left;
+  margin-left: 1%;
+}
+
+#basket {
+  max-width: 1.5rem;
+  float: right;
+}
+
+/* Navigation link styling */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 5%;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul li a {
+  display: block;
+  color: var(--black);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--accent1);
+}
