@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Mitr&display=swap");
+
+h1 {
+  position: absolute;
+  transform: rotate(90deg);
+  left: -22.5%;
+  bottom: 22%;
+  font-size: 41px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 40px;
+  color: transparent;
+  background-image: url("/illustrations/sparkles.gif");
+  -webkit-background-clip: text;
+}
+
+p {
+  font-family: montserrat;
+  max-width: 40ch;
+  line-height: 1.8;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5em;
+}
+
+#textContact {
+  margin-left: 10%;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form div on the right */
+
+#form1 {
+  background-color: #b4aeac;
+  font-family: montserrat;
+  font-size: 0.95em;
+  color: white;
+  padding: 2em;
+  padding-left: 5em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  position: relative;
+}
+
+input {
+  margin-bottom: 1rem;
+}
+
+#form1Btn {
+  padding: 0.8em 3em;
+  margin-left: 0;
+  background-color: white;
+  font-size: 16px;
+}
+
+#form1Btn:hover {
+  background: url("/illustrations/sparkles.gif") no-repeat;
+  cursor: pointer;
+  color: white;
+  text-shadow: black;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+form p {
+  margin: 0;
+}
+
+.w-100 {
+  width: 80%;
+}
+
+textarea {
+  max-width: 80%;
+  max-height: 100px;
+  resize: vertical;
+}

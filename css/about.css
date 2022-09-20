@@ -1,0 +1,67 @@
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#aboutSection1 {
+  background-color: white;
+}
+#aboutSection1a {
+  background-color: transparent;
+  margin: 5em;
+}
+#aboutSection1b {
+  background-color: #f8f5f5;
+  padding: 5em;
+  margin: 2em;
+}
+
+p {
+  max-width: 60ch;
+  font-family: montserrat;
+}
+
+#aboutSection2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 2em;
+}
+
+#aboutSection2b {
+  position: relative;
+  background-color: #b4aeac;
+}
+
+h1 {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 49%;
+  bottom: 7%;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: montserrat;
+  color: white;
+}
+
+h2 {
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 40px;
+  color: transparent;
+  background-image: url("/illustrations/sparkles.gif");
+  -webkit-background-clip: text;
+}
+
+.aboutBtn {
+  padding: 0.8em 3em;
+  margin-left: 0;
+  background-color: white;
+  font-size: 16px;
+}
+
+.aboutBtn:hover {
+  background: url("/illustrations/sparkles.gif") no-repeat;
+  cursor: pointer;
+  color: white;
+  text-shadow: black;
+}

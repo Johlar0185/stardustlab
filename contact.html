@@ -4,8 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
     <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
     <title>Contact</title>
   </head>
-  <body></body>
+  <body>
+    <header></header>
+    <main>
+      <div id="textContact">
+        <h2>Wanna <b>work</b> with us?</h2>
+        <h2>Have a <b>question?</b></h2>
+        <br />
+        <p>
+          Fill in your details and let’s chat about how we can help you
+          <b>achieve your goals.</b>
+        </p>
+      </div>
+      <div id="form1">
+        <form action="/action_page.php" method="get">
+          <div class="d-flex">
+            <label
+              ><p>First name</p>
+              <input
+                type="text"
+                name="firstname"
+                placeholder="e.g. Anne"
+                required
+              />
+            </label>
+            <label
+              ><p>Last name</p>
+              <input
+                type="text"
+                name="lastname"
+                placeholder="e.g. Smith"
+                required
+              />
+            </label>
+          </div>
+
+          <label for="phonenumber"> <p>Phone number</p></label>
+          <input type="text" name="phonenumber" placeholder="+45" required />
+
+          <label for="phonenumber"> <p>E-mail</p></label>
+          <input
+            type="text"
+            name="email"
+            placeholder="example@example.com"
+            required
+          />
+
+          <label for="message"> <p>Write your message here</p></label>
+          <input type="text" name="message" placeholder="Hi" class="w-100" />
+        </form>
+        <button id="form1Btn" value="submit">Get in touch!</button>
+        <h1>GET IN TOUCH</h1>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
