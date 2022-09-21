@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/uhe1zjk.css");
+
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -13,8 +15,7 @@
   margin-left: 1%;
 }
 
-#basket {
-  max-width: 1.5rem;
+svg {
   float: right;
 }
 

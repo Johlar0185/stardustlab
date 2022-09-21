@@ -32,6 +32,8 @@ p {
   background-color: #b4aeac;
 }
 
+@import url("https://use.typekit.net/uhe1zjk.css");
+
 h1 {
   position: absolute;
   transform: rotate(90deg);
@@ -44,9 +46,9 @@ h1 {
 }
 
 h2 {
-  font-family: montserrat;
-  font-weight: bold;
-  font-size: 40px;
+  font-family: motiva-sans, sans-serif;
+  font-weight: 900;
+  font-size: 45px;
   color: transparent;
   background-image: url("/illustrations/sparkles.gif");
   -webkit-background-clip: text;
