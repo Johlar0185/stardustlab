@@ -4,7 +4,7 @@
 /* Background image and nav list colour */
 
 body {
-  background-image: url("/illustrations/homeBanner.png");
+  background-image: url("illustrations/homeBanner.png");
   background-position: center 0;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -22,7 +22,7 @@ h2 {
   font-style: normal;
   font-size: 50px;
   color: transparent;
-  background-image: url("/illustrations/sparkles.gif");
+  background-image: url("illustrations/sparkles.gif");
   -webkit-background-clip: text;
 }
 
@@ -80,27 +80,27 @@ h2 {
 }
 
 #card1 {
-  background-image: url("/illustrations/inStock.png");
+  background-image: url("illustrations/inStock.png");
 }
 
 #card1:hover {
-  background-image: url("/illustrations/inStockHover.png");
+  background-image: url("illustrations/inStockHover.png");
 }
 
 #card2 {
-  background-image: url("/illustrations/rent.png");
+  background-image: url("illustrations/rent.png");
 }
 
 #card2:hover {
-  background-image: url("/illustrations/rentHover.png");
+  background-image: url("illustrations/rentHover.png");
 }
 
 #card3 {
-  background-image: url("/illustrations/custom.png");
+  background-image: url("illustrations/custom.png");
 }
 
 #card3:hover {
-  background-image: url("/illustrations/customHover.png");
+  background-image: url("illustrations/customHover.png");
 }
 
 /* About me section */
@@ -139,7 +139,7 @@ h3 {
 #fpContactBtn {
   padding: 0.8em 3em;
   margin-left: 0;
-  background: url("/illustrations/sparkles.gif") no-repeat;
+  background: url("illustrations/sparkles.gif") no-repeat;
   font-size: 16px;
   margin-top: 1em;
   color: white;

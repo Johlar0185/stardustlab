@@ -15,6 +15,10 @@ nav ul li a {
   color: black;
 }
 
+.homeBtn {
+  display: none;
+}
+
 h1 {
   position: absolute;
   transform: translateX(5%) rotate(90deg);
@@ -181,5 +185,17 @@ textarea {
     margin-top: 3em;
     cursor: pointer;
     justify-self: center;
+  }
+
+  .homeBtn {
+    display: list-item;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .d-flex {
+    flex-direction: column;
   }
 }
