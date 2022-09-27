@@ -1,18 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Mitr&display=swap");
+@import url("https://use.typekit.net/uhe1zjk.css");
+
+/* From base CSS */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em 4em;
+}
+
+/* Navigation link colors */
+
+nav ul li a {
+  color: black;
+}
 
 h1 {
   position: absolute;
-  transform: rotate(90deg);
-  left: -22.5%;
-  bottom: 22%;
-  font-size: 41px;
-  font-weight: bold;
+  transform: translateX(5%) rotate(90deg);
+  transform-origin: left;
+  left: 1%;
+  bottom: 55%;
+  font-size: 51px;
+  font-family: motiva-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 h2 {
-  font-family: montserrat;
-  font-weight: bold;
-  font-size: 40px;
+  font-family: motiva-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 45px;
   color: transparent;
   background-image: url("/illustrations/sparkles.gif");
   -webkit-background-clip: text;
@@ -27,11 +46,10 @@ p {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 5em;
+  padding: 0em 5em;
 }
 
 #textContact {
-  margin-left: 10%;
   padding: 1em;
 }
 
@@ -62,15 +80,14 @@ input {
 #form1Btn {
   padding: 0.8em 3em;
   margin-left: 0;
-  background-color: white;
+  background: url("/illustrations/sparkles.gif") no-repeat;
   font-size: 16px;
+  margin-top: 1em;
+  color: white;
 }
 
 #form1Btn:hover {
-  background: url("/illustrations/sparkles.gif") no-repeat;
   cursor: pointer;
-  color: white;
-  text-shadow: black;
 }
 
 .d-flex {
