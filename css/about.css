@@ -1,3 +1,15 @@
+@import url("https://use.typekit.net/uhe1zjk.css");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em 4em;
+}
+
+nav ul li a {
+  color: black;
+}
+
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -6,6 +18,7 @@ main {
 #aboutSection1 {
   background-color: white;
 }
+
 #aboutSection1a {
   background-color: transparent;
   margin: 5em;
@@ -25,23 +38,23 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-right: 2em;
+  position: relative;
 }
 
 #aboutSection2b {
-  position: relative;
   background-color: #b4aeac;
 }
 
-@import url("https://use.typekit.net/uhe1zjk.css");
-
 h1 {
   position: absolute;
-  transform: rotate(90deg);
-  left: 49%;
-  bottom: 7%;
-  font-size: 35px;
-  font-weight: bold;
-  font-family: montserrat;
+  transform: translateX(5%) rotate(90deg);
+  transform-origin: left;
+  left: 53%;
+  bottom: 25%;
+  font-size: 60px;
+  font-family: motiva-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
   color: white;
 }
 
@@ -54,16 +67,31 @@ h2 {
   -webkit-background-clip: text;
 }
 
-.aboutBtn {
+#aboutBtn {
   padding: 0.8em 3em;
   margin-left: 0;
-  background-color: white;
+  background: url("/illustrations/sparkles.gif") no-repeat;
   font-size: 16px;
+  color: white;
 }
 
-.aboutBtn:hover {
-  background: url("/illustrations/sparkles.gif") no-repeat;
+#aboutBtn:hover {
   cursor: pointer;
-  color: white;
-  text-shadow: black;
+}
+
+#aboutPhotoId {
+  position: absolute;
+  size: 10rem;
+  left: 1%;
+  right: 1%;
+}
+
+#achievementsBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+}
+
+#achievementsBox :first-child {
+  grid-column: 1 / -1;
 }

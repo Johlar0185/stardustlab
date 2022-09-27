@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Mitr&display=swap");
+@import url("https://use.typekit.net/uhe1zjk.css");
+
+/* Background image and nav list colour */
+
+body {
+  background-image: url("/illustrations/home-img 2.png");
+  background-position: center 8px;
+  background-repeat: no-repeat;
+  background-size: 99vw;
+  background-color: #ffffff;
+}
+
+nav ul li a {
+  color: white;
+}
+
+h2 {
+  font-family: motiva-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 50px;
+  color: transparent;
+  background-image: url("/illustrations/sparkles.gif");
+  -webkit-background-clip: text;
+}
+
+/* Grid with icons */
+
+#fpContainer1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40vw;
+  margin-right: 4em;
+  margin-left: 4em;
+}
+
+#fpWhatWeDo {
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-bottom: 1em;
+}
+
+.fpSubContainer1 {
+  padding: 2em;
+  display: grid;
+}
+
+.seeMoreBtn {
+  padding: 1em 2em;
+  justify-self: center;
+  background-color: white;
+  font-size: 14px;
+}
+
+.seeMoreBtn:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Cards that change on hover */
+
+#card1,
+#card2,
+#card3 {
+  width: 15vw;
+  height: 15vw;
+  display: inline-block;
+  justify-self: center;
+  background-size: 15vw;
+  background-repeat: no-repeat;
+  padding-bottom: 2em;
+}
+
+#card1:hover,
+#card2:hover,
+#card3:hover {
+  cursor: pointer;
+}
+
+#card1 {
+  background-image: url("/illustrations/inStock.png");
+}
+
+#card1:hover {
+  background-image: url("/illustrations/inStockHover.png");
+}
+
+#card2 {
+  background-image: url("/illustrations/rent.png");
+}
+
+#card2:hover {
+  background-image: url("/illustrations/rentHover.png");
+}
+
+#card3 {
+  background-image: url("/illustrations/custom.png");
+}
+
+#card3:hover {
+  background-image: url("/illustrations/customHover.png");
+}
+
+/* About me section */
+
+.fpContainer2 {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 5em;
+}
+
+.fpWhoWeAre {
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-bottom: 1em;
+}
+
+.fpGreyBackground {
+  background-color: #b4aeac;
+  margin: 0;
+}
+
+p {
+  max-width: 65ch;
+  font-family: montserrat;
+  line-height: 1.3;
+}
+
+h3 {
+  font-family: montserrat;
+  font-size: 20px;
+}
+
+/* Contact button */
+
+#fpContactBtn {
+  padding: 0.8em 3em;
+  margin-left: 0;
+  background: url("/illustrations/sparkles.gif") no-repeat;
+  font-size: 16px;
+  margin-top: 1em;
+  color: white;
+  margin-bottom: 4em;
+}
+
+#fpContactBtn {
+  margin-top: 4em;
+  cursor: pointer;
+}
+
+#fpSubContainer2a {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#normaPhoto {
+  width: 22em;
+  justify-self: right;
+  margin-right: 4em;
+  margin-bottom: 4em;
+  border: 5px solid white;
+}

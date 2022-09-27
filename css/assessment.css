@@ -1,0 +1,13 @@
+/* From base CSS */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em 4em;
+}
+
+/* Navigation link colors */
+
+nav ul li a {
+  color: black;
+}
