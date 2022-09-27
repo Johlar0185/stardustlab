@@ -4,11 +4,12 @@
 /* Background image and nav list colour */
 
 body {
-  background-image: url("/illustrations/home-img 2.png");
-  background-position: center 8px;
+  background-image: url("/illustrations/homeBanner.png");
+  background-position: center 0;
   background-repeat: no-repeat;
-  background-size: 99vw;
   background-color: #ffffff;
+  margin: 0;
+  background-size: contain;
 }
 
 nav ul li a {
@@ -30,7 +31,7 @@ h2 {
 #fpContainer1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 40vw;
+  margin-top: 37vw;
   margin-right: 4em;
   margin-left: 4em;
 }
@@ -161,4 +162,68 @@ h3 {
   margin-right: 4em;
   margin-bottom: 4em;
   border: 5px solid white;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1150px) {
+  header {
+    margin: 0em;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  nav ul li a {
+    color: black;
+  }
+
+  body {
+    background-position: center 56px;
+    background-size: 140vh;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #fpContainer1 {
+    grid-template-columns: 1fr;
+    margin-top: 26em;
+  }
+
+  p {
+    max-width: 40ch;
+  }
+
+  #card1,
+  #card2,
+  #card3 {
+    width: 40vw;
+    height: 40vw;
+    background-size: 40vw;
+  }
+
+  .fpSubContainer1 {
+    justify-self: center;
+  }
+
+  .fpContainer2 {
+    grid-template-columns: 1fr;
+    margin: 2em;
+  }
+
+  #normaPhoto {
+    width: 22em;
+    justify-self: center;
+    margin-right: 0em;
+    margin-bottom: 3em;
+    border: 5px solid white;
+  }
+  #fpContactBtn {
+    margin-top: 3em;
+    cursor: pointer;
+    justify-self: center;
+  }
 }
