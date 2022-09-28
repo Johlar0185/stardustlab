@@ -1,9 +1,9 @@
 @import url("https://use.typekit.net/uhe1zjk.css");
 
 :root {
-  --white: #f0e8e5;
+  --white: #ffffff;
   --black: #000000;
-  --grey: #f8f5f5;
+  --grey: #b4aeac;
   --accent1: #deafa9;
 }
 
@@ -16,6 +16,7 @@
 }
 
 /* Button pulse grow on :hover */
+
 @-webkit-keyframes pulse-grow-on-hover {
   to {
     -webkit-transform: scale(1.1);
@@ -64,11 +65,9 @@ body {
 }
 
 header {
-  /* position: fixed; */
   position: absolute;
   top: 1em;
   width: 100%;
-  /* background-color: white; */
 }
 
 li {
@@ -79,6 +78,10 @@ a {
   color: black;
   text-decoration: none;
   font-family: montserrat;
+}
+
+nav ul li a:hover {
+  color: var(--accent1);
 }
 
 .container {
@@ -122,12 +125,12 @@ a {
   height: 3px;
   margin: 5px 0;
   transition: all 0.3s ease;
-  background-color: black;
+  background-color: var(--black);
 }
 
 #home {
   margin-top: 70px;
-  border: 1px solid black;
+  border: 1px solid var(--black);
   height: 100vh;
 }
 
@@ -157,7 +160,7 @@ a {
     transform: translateY(-110%);
     gap: 0;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--white);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -171,7 +174,7 @@ a {
     transform: translateY(-6%);
   }
   .active {
-    background-color: white;
+    background-color: var(--white);
     z-index: 10;
   }
 

@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Mitr&display=swap");
 @import url("https://use.typekit.net/uhe1zjk.css");
 
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #b4aeac;
+  --accent1: #deafa9;
+}
+
 h1 {
   position: absolute;
   transform: translateX(5%) rotate(90deg);
   transform-origin: left;
   left: 1%;
-  bottom: 55%;
+  bottom: 62%;
   font-size: 51px;
   font-family: motiva-sans, sans-serif;
   font-weight: 900;
@@ -57,10 +64,10 @@ body {
 /* Form div on the right */
 
 #form1 {
-  background-color: #b4aeac;
+  background-color: var(--grey);
   font-family: montserrat;
   font-size: 0.95em;
-  color: white;
+  color: var(--white);
   padding: 2em;
   padding-left: 5em;
   padding-top: 5em;
@@ -78,7 +85,7 @@ input {
   background: url("../illustrations/sparkles.gif") no-repeat;
   font-size: 16px;
   margin-top: 1em;
-  color: white;
+  color: var(--white);
 }
 
 #form1Btn:hover {
@@ -122,7 +129,7 @@ textarea {
     background-position: center 56px;
     background-size: 140vh;
     background-repeat: no-repeat;
-    background-color: #ffffff;
+    background-color: var(--white);
   }
 
   #logo {
@@ -162,7 +169,7 @@ textarea {
     justify-self: center;
     margin-right: 0em;
     margin-bottom: 3em;
-    border: 5px solid white;
+    border: 5px solid var(--white);
   }
   #fpContactBtn {
     margin-top: 3em;

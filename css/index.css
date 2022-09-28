@@ -3,18 +3,29 @@
 
 /* Background image and nav list colour */
 
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #b4aeac;
+  --accent1: #deafa9;
+}
+
 #hero {
   background-image: url("../illustrations/homeBanner.png");
   background-position: center 0;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: var(--white);
   margin: 0;
   background-size: cover;
   height: 100vh;
 }
 
 nav ul li a {
-  color: white;
+  color: var(--white);
+}
+
+nav ul li a:hover {
+  color: var(--accent1);
 }
 
 .nav-menu.active .nav-link,
@@ -23,11 +34,11 @@ nav ul li a {
 }
 
 .bar {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .hamburger.active .bar {
-  background-color: black;
+  background-color: var(--black);
 }
 
 h2 {
@@ -122,7 +133,7 @@ h2 {
 }
 
 .fpGreyBackground {
-  background-color: #b4aeac;
+  background-color: var(--grey);
   margin: 0;
 }
 
@@ -147,9 +158,9 @@ h3 {
   background: url("../illustrations/sparkles.gif") no-repeat;
   font-size: 16px;
   margin-top: 1em;
-  color: white;
+  color: var(--white);
   margin-bottom: 4em;
-  border: 1px solid black;
+  border: 1px solid var(--black);
 }
 
 #fpContactBtn {
@@ -167,7 +178,7 @@ h3 {
   justify-self: right;
   margin-right: 4em;
   margin-bottom: 4em;
-  border: 5px solid white;
+  border: 5px solid var(--white);
 }
 
 @media only screen and (max-width: 940px) {
@@ -179,7 +190,7 @@ h3 {
     background-position: center;
     background-size: 140vh;
     background-repeat: no-repeat;
-    background-color: #ffffff;
+    background-color: var(--white);
   }
 
   #nav-branding {
@@ -217,7 +228,7 @@ h3 {
     justify-self: center;
     margin-right: 0em;
     margin-bottom: 3em;
-    border: 5px solid white;
+    border: 5px solid var(--white);
   }
 
   #fpContactBtn {
@@ -227,6 +238,6 @@ h3 {
   }
 
   .nav-link {
-    color: black;
+    color: var(--black);
   }
 }
