@@ -15,36 +15,6 @@
   margin-left: 1%;
 }
 
-/* Navigation link styling */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 0em 4em;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
-  font-family: montserrat;
-}
-
-nav ul li a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  color: black;
-}
-
-nav ul li a:hover {
-  color: var(--accent1);
-}
-
 /* Button pulse grow on :hover */
 @-webkit-keyframes pulse-grow-on-hover {
   to {
@@ -78,4 +48,134 @@ nav ul li a:hover {
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+}
+
+/* new nav menu */
+
+@import url("https://use.typekit.net/uhe1zjk.css");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  /* position: fixed; */
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  /* background-color: white; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: montserrat;
+}
+
+.container {
+  width: 1600px;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+.navbar {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+#nav-branding {
+  max-width: 10rem;
+  float: left;
+  margin-left: 1%;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+
+#home {
+  margin-top: 70px;
+  border: 1px solid black;
+  height: 100vh;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+  .active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: absolute;
+    inset: 0 0 auto;
+    transform: translateY(-110%);
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    transform: translateY(-6%);
+  }
+  .active {
+    background-color: white;
+    z-index: 10;
+  }
+
+  #nav-branding {
+    display: none;
+  }
 }
