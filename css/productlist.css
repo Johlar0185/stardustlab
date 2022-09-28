@@ -1,0 +1,22 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.hover-img {
+  position: relative;
+}
+.hover-img .first-img {
+  position: absolute;
+}
+.hover-img:hover .first-img {
+  display: none;
+}
+.img-container {
+  max-width: 200px;
+}
+
+img {
+  width: 100%;
+}

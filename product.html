@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
     <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/productlist.css" />
-    <title>Productlist</title>
+    <title>Product</title>
   </head>
   <body>
     <header>
@@ -41,29 +40,29 @@
     </header>
 
     <main>
-      <template id="smallProductTemplate">
-        <article class="smallProduct">
-          <a href="#">
-            <div class="img-container">
-              <img
-                class="first-img"
-                src="http://mamouzelos.art/stardustLab/img/stardustLab-img/acamar1.jpg"
-                alt="img1"
-              />
-              <img
-                class="secondary-img"
-                src="http://mamouzelos.art/stardustLab/img/stardustLab-img/acamar2.jpg"
-                alt="img2"
-              />
-            </div>
-            <h3>Acamar</h3>
-            <p class="price"></p>
-          </a>
-        </article>
-      </template>
+      <article>
+        <h2>Acamar</h2>
+        <div class="img-container">
+          <img src="http://mamouzelos.art/stardustLab/img/stardustLab-img/acamar1.jpg" alt="img1" />
+          <img
+            class="secondary-img"
+            src="http://mamouzelos.art/stardustLab/img/stardustLab-img/acamar2.jpg"
+            alt="img2"
+          />
+        </div>
+
+        <p class="inventoryNumber"></p>
+        <p class="style"></p>
+        <p class="description"></p>
+        <p class="color"></p>
+        <p class="cupsize"></p>
+        <p class="bottomsize"></p>
+        <p class="shoesize"></p>
+        <p class="price"></p>
+      </article>
     </main>
 
     <footer></footer>
-    <script src="js/productlist.js"></script>
+    <script src="js/product.js"></script>
   </body>
 </html>
